@@ -3,11 +3,55 @@ header h1 {position: absolute; left: 50px; top: 0px; padding: 14px;}
 header h1 a{display:block; width: 114px; height: 48px; color: transparent; background: url("img/sp_com.png") no-repeat -300px 0;} /*trasnparent 투명*/  
 header .spot {position: absolute; right: 50px; top: 0px;}
 header .lnb lu{padding: 22px 0 0 0; display: block}
-header .lnb li{position: relative;padding: 0 35px 0 35px; display: inline-block; color:#333; } 
-header .lnb li a{display: block; height: 36px; line-height: 36px;}
+header .lnb li{position: relative;padding: 0 35px 0 35px; display: inline-block; color:#000; } 
+header .lnb li a{display: block; height: 36px; line-height: 36px; font-size: 18px}
 /*float: left 를 써서 붙이면 text-align:center을 먹음 왜인지는 모르겠다.@@@ */ 
-/*inline-block은 <li>사이를 스페이스바 처리됨. (like 제품정보 고객센터 기업소) */
-header .spot li{position: relative;padding: 0 0 0 20px; display: inline-block;}
-header .spot li :after {content:""; position: absolute; left: 10px; top: 50%; width: 1px; height: 7px; background: #ccc; transform: translateY(-50%)}
+/*inline-block은 <li>사이를 스페이스바 처리. (ex 제품정보 고객센터 기업소) */
+header .lnb li a:hover {color: #2d5b79; font-weight: bold;}
+header .lnb li a span {position: relative;}/*왜지...?@@@*/
+header .lnb li a:hover span:after {position: absolute; left: 0; bottom: -50%;content: "";display: block; width: 100%; height: 1px; background: #2d5b79;}
+header .lnb li a:after {position: absolute; left: 0; bottom: 0; content: ""; 
+display: block;height: 1px; background: #2d5b79}
+header .spot li{position: relative;padding: 0 0 0 20px; display: inline-block;color:#000;}
+header .spot li :after {content:""; position: absolute; left: 10px; top: 50%; width: 1px; height: 7px; background: #ccc; transform: translateY(-50%)} /*목록 사이 막대기*/
 header .spot li:first-child :after {display: none;}
-header .spot li a{display: block; height: 80px; line-height: 80px;}
+header .spot li a{display: block; height: 80px; line-height: 80px; font-size: 14px;}
+header .spot li a:hover {color: #000; text-decoration-line: underline;}
+.visual {position: relative; padding: 0 50px; top: 25px;}
+.visual .prev,
+.visual .next {display: block; position: absolute; top: 50%; width: 25px; height: 47px; transform: translateY(-50%); background: url("img/sp_com.png") no-repeat; color: transparent;}
+.visual .prev {left:82px;background-position: -128px -61px}
+.visual .next {right:82px;background-position: -159px -61px}
+.visual .control {position: absolute; left: 0; bottom: 55px; width: 100%; text-align: center;} 
+.visual .control > div {display: inline-block; position: relative; padding: 0 45px 0 0;}
+.visual .control > div > div {position: absolute; right: 0;}
+.visual .control > div > div a{overflow: hidden; display: inline-block; margin: 0
+	0 0 7px; width: 8px; height: 9px; background: url("img/sp_com.png") no-repeat; opacity: 0.5;}
+.visual .control > div > div a.on {opacity: 1;}
+.visual .control > div > div a.play {background-position: -108px -72px;}
+.visual .control > div > div a.pause {background-position: -108px -60px;}
+.visual .control ul,
+.visual .control li {display: inline-block;padding: 4px}
+.visual .control li.on a {background: #fff;}
+.visual .control li a {display: block; width: 50px; height: 3px; background:rgba(225,225,225,0.5); border:none;} 
+/*rgba 투명하 border 테두리*/
+.visual .control a {color: transparent;}
+.visual .con > div {height: 690px;}
+.visual .con .slide {background: url("img/bg_main00.jpg") no-repeat center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
