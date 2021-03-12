@@ -53,4 +53,12 @@ textarea[disabled]{padding:11px; font-size:16px; color:#666; font-weight:normal;
 
 .clear {clear:both;}
 .clear:after { content:""; display:block; clear:both;}
+.hide {position: absolute; left: -500px }/* display: none 을하면 화면 낭독에서 제외됨, 화면밖으로 날리는게 좋음 */
+.skip{position:absolute; left:0; top: -100px; width: 100%; height: 50px; line-height: 50px; background: #000; color: #fff; text-align: center; font-size: 14px; transition:all 0.5s} /* 본문바로가기 부분 (transition:슬라이스 내려오는 시간 */
+.skip:focus {top:0;} /*포커스 되어있을때만 0 아닐때 -100px*/
+
+
+
+
+
 
