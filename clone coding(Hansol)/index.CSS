@@ -1,17 +1,19 @@
+body {min-width: 1280px;}
+
 /*----------------------- < header > ---------------------*/
-header {text-align: center; display: block; box-sizing: content-box;height: 80px;}
+header {position: relative; text-align: center; display: block; box-sizing: content-box; height: 80px;}
 header h1 {position: absolute; left: 50px; top: 0px; padding: 14px 14px 14px 0;}
 header h1 a{display:block; width: 114px; height: 48px; color: transparent; background: url("img/sp_com.png") no-repeat -300px 0;} /*trasnparent 투명*/  
-header .spot {position: absolute; right: 50px; top: 0px;}
 header .lnb lu{padding: 22px 0 0 0; display: block;}
 header .lnb li{position: relative;padding: 0 35px 0 35px; display: inline-block; color:#000;} 
 header .lnb li a{position: relative; display: block; height: 36px; line-height: 36px; font-size: 18px;}
 header .lnb li a:hover {color: #2d5b79; font-weight: bold; border-bottom: 1px solid #2d5b79;} /* 여기서 리베하얀님은 hover밑줄을 박스를 따로 만들어서 했는데 왜지? border-bottom은 호환성이 안좋나???????????????? 구지 <span> 까지 해서 해야했나??? */
+header .spot {position: absolute; right: 50px; top: 0px;}
 header .spot li{position: relative; padding: 0 0 0 20px; display: inline-block;color:#000;}
 header .spot li :after {content:""; position: absolute; left: 10px; top: 50%; width: 1px; height: 7px; background: #ccc; transform: translateY(-50%)} /*목록 사이 막대기*/
 header .spot li:first-child :after {display: none;}
 header .spot li a{display: block; height: 80px; line-height: 80px; font-size: 14px;}
-header .spot li a:hover {color: #000; text-decoration-line: underline;}/*underline이 익스플로어에서는 작동안됨!!왜!!!!!!!!!!!!!!!!!!!!!*/
+header .spot li a:hover {color: #000; text-decoration-line: underline;}/*underline이 익스플로어에서는 작동안됨!다른 태그?찾아야하나?!!!!!!!!!!!!!!!!!!!!!!*/
 
 /*ㅁㅁㅁㅁㅁㅁㅁㅁㅁ이미지 잘라서 넣는거 아직 안 익숙하다ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ*/
 /*------------------------ < visual > ---------------------*/
@@ -35,10 +37,17 @@ header .spot li a:hover {color: #000; text-decoration-line: underline;}/*underli
 .visual .control li a {display: block; width: 50px; height: 3px; background:rgba(225,225,225,0.5); border:none;} 
 /*rgba 투명하 border 테두리*/
 .visual .control a {color: transparent;}
-.visual .con .slide {background: url("img/bg_main00.jpg") no-repeat center; height: 690px; background-size: cover;}
+.visual .txt {position: absolute; text-align: center; margin-top: 330px; left: 50%; transform: translate(-50%, -50%); font-size: 26px; color: #fff}
+.visual .txt spen {font-size: 45px;}
+.visual .con {background: url("img/bg_main00.jpg") no-repeat center; height: 690px; background-size: cover;}
 
+/*---------------------< icons >-------------------*/
+.icons {position: relative; margin: 0 159px; padding: 0 50px; text-align: center; height: 180px;}
+.icons div{position: relative; display: inline-block; height: 100px; top: 40px; width: 175px;}
+.icons div li {position: relative; display: block; top: 50%; transform: translateY(-100%);}
+.icons .img {margin-bottom: 14px; background: url("img/sp_com.png") no-repeat; } /*아 맞다.......어차피 이미지 하나씩 따로 지정해줘야하구나............*/
 
-
+.icons .txt {font-size: 16px;}
 
 
 
