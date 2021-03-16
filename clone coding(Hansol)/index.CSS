@@ -42,14 +42,28 @@ header .spot li a:hover {color: #000; text-decoration-line: underline;}/*underli
 .visual .con {background: url("img/bg_main00.jpg") no-repeat center; height: 690px; background-size: cover;}
 
 /*---------------------< icons >-------------------*/
-.icons {position: relative; margin: 0 159px; padding: 0 50px; text-align: center; height: 180px;}
-.icons div{position: relative; display: inline-block; height: 100px; top: 40px; width: 175px;}
-.icons div li {position: relative; display: block; top: 50%; transform: translateY(-100%);}
-.icons .img {margin-bottom: 14px; background: url("img/sp_com.png") no-repeat; } /*아 맞다.......어차피 이미지 하나씩 따로 지정해줘야하구나............*/
+.icons ul {padding: 0 50px; margin: 0 88px; text-align: center; height: 180px}
+.icons li {position: relative; display: inline-block; top:40px; width: 175px}
+.icons a {color : #001829; font-size: 16px; }
+.icons a:hover { color: #2d5b79; font-weight: bold; }
+.icons a:before {content: ""; display: block; width: 70px; height: 64px; background: url(img/sp_com.png); margin: 0 auto 14px auto;}
+.icons ul div {position: relative; display: inline-block}
+.icons .icon1 li:nth-child(1) a:before{ background-position:-0px  -113px}
+.icons .icon1 li:nth-child(2) a:before{ background-position:-71px  -113px}
+.icons .icon1 li:nth-child(3) a:before{ background-position:-144px  -113px}
+.icons .icon1 li:nth-child(1) a:hover:before{ background-position:-0px  -179px}
+.icons .icon1 li:nth-child(2) a:hover:before{ background-position:-71px  -179px}
+.icons .icon1 li:nth-child(3) a:hover:before{ background-position:-144px  -179px}
+.icons .icon2 li:nth-child(1) a:before{ background-position:-216px  -113px}
+.icons .icon2 li:nth-child(2) a:before{ background-position:-288px  -113px}
+.icons .icon2 li:nth-child(3) a:before{ background-position:-361px  -113px}
+.icons .icon2 li:nth-child(1) a:hover:before{ background-position:-216px  -179px}
+.icons .icon2 li:nth-child(2) a:hover:before{ background-position:-288px  -179px}
+.icons .icon2 li:nth-child(3) a:hover:before{ background-position:-361px  -179px}
 
-.icons .txt {font-size: 16px;}
-
-
+.blog {background-color: #f2f0ed; height: 638px; padding: 40px 0 90px 0;}
+.blog h2 {text-align: center; font-size: 30px;}
+.blog h2 
 
 
 
