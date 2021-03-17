@@ -7,17 +7,15 @@ header h1 a{display:block; width: 114px; height: 48px; color: transparent; backg
 header .lnb lu{padding: 22px 0 0 0; display: block;}
 header .lnb li{position: relative;padding: 0 35px 0 35px; display: inline-block; color:#000;} 
 header .lnb li a{position: relative; display: block; height: 36px; line-height: 36px; font-size: 18px;}
-header .lnb li a:hover {color: #2d5b79; font-weight: bold; border-bottom: 1px solid #2d5b79;} /* 여기서 리베하얀님은 hover밑줄을 박스를 따로 만들어서 했는데 왜지? border-bottom은 호환성이 안좋나???????????????? 구지 <span> 까지 해서 해야했나??? */
+header .lnb li a:hover {color: #2d5b79; font-weight: bold; border-bottom: 1px solid #2d5b79;} /* 여기서 영상에서는 hover밑줄을 박스를 따로 만들어서 했는데 왜지? border-bottom은 호환성이 안좋나?*/
 header .spot {position: absolute; right: 50px; top: 0px;}
 header .spot li{position: relative; padding: 0 0 0 20px; display: inline-block;color:#000;}
 header .spot li :after {content:""; position: absolute; left: 10px; top: 50%; width: 1px; height: 7px; background: #ccc; transform: translateY(-50%)} /*목록 사이 막대기*/
 header .spot li:first-child :after {display: none;}
 header .spot li a{display: block; height: 80px; line-height: 80px; font-size: 14px;}
-header .spot li a:hover {color: #000; text-decoration-line: underline;}/*underline이 익스플로어에서는 작동안됨!다른 태그?찾아야하나?!!!!!!!!!!!!!!!!!!!!!!*/
+header .spot li a:hover {color: #000; text-decoration-line: underline;}/*underline이 익스플로어에서는 작동안됨!다른 태그?찾아야하나?*/
 
-/*ㅁㅁㅁㅁㅁㅁㅁㅁㅁ이미지 잘라서 넣는거 아직 안 익숙하다ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ*/
 /*------------------------ < visual > ---------------------*/
-/* 왜visual을 class 로뒀을까?????????????????????*/
 .visual {position: relative; padding: 0 50px;}
 .visual .prev,
 .visual .next {display: block; position: absolute; top: 50%; width: 25px; height: 47px; transform: translateY(-50%); background: url("img/sp_com.png") no-repeat; color: transparent;}
@@ -61,20 +59,39 @@ header .spot li a:hover {color: #000; text-decoration-line: underline;}/*underli
 .icons .icon2 li:nth-child(2) a:hover:before{ background-position:-288px  -179px}
 .icons .icon2 li:nth-child(3) a:hover:before{ background-position:-361px  -179px}
 
-.blog {background-color: #f2f0ed; height: 638px; padding: 40px 0 90px 0;}
-.blog h2 {text-align: center; font-size: 30px;}
-.blog h2 
+/*-------------------< blog >--------------------------*/
+.blog {background-color: #f2f0ed; height: 638px; padding: 40px 0 90px 0; text-align: center;}
+.blog h2 {text-align: center; font-size: 30px; padding-bottom: 40px;}
+
+
+
+.blog .prev,
+.blog .next{display: block; position: absolute; top: 50%; width: 25px; height: 47px; transform: translateY(-50%); background: url("img/sp_com.png") no-repeat; color: transparent;}
+.blog .prev {left:82px; background-position: -333px -670px}
+.blog .next {right:82px; background-position: -400px -670px}
+
+
+
+.blog .bx-view {position: relative; display: flex; padding: 0 50px; width: 1180px; justify-content: space-between; left: 50%; transform: translateX(-50%); }
+.blog .bx-view a{display: inline-block; background-color: #FFFFFF; height: 553px; width: 280px; text-align: left;}
+.blog .bx-view .txt{padding: 26px 28px;}
+.blog .bx-view .txt:hover {color: #000; text-decoration-line: underline;}
+.blog .bx-view .txt .tit {font-size: 18px; font-weight: bold;height: 54px; margin-bottom: 10px;}
+.blog .bx-view .txt .cont-t,
+.blog .bx-view .txt .cont {font-size: 16px; margin-bottom: 6px; padding-left: 67px;}
+.blog .bx-view .txt span{position: absolute; display: inline; font-size: 14px; font-weight: bold}
+
+/*------------------------< youtube >--------------------*/
+.youtube {position: relative; display: block; padding: 40px 0 100px 0; height: 320px}
+.youtube .layout { padding: 0 50px; width: 1180px; height: 320px;}
+.youtube .layout div {position: relative; display: flex;justify-content: space-between; left: 50%; transform: translateX(-50%);height: 275px;}
+.youtube div h2 {text-align: center; font-size: 30px;}
+.youtube div a img{height: 160px; width: 280px;}
+
+
+/*------------------------< notice >--------------------*/
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*------------------------< btm >--------------------*/
