@@ -104,6 +104,7 @@ header .spot li a:hover {color: #000; text-decoration-line: underline;}/*underli
 .youtube .layout  {position: relative; display: flex; justify-content: space-between; left: 50%; transform: translateX(-50%);height: 275px;}
 .youtube div a img{height: 160px; width: 280px;}
 .youtube div a p{margin-top:16px; padding: 0px 15px ;font-size: 18px; font-weight: bold;}
+.youtube .layout .tit:hover {color: #000; text-decoration-line: underline;}
 
 /*------------------------ < notice > --------------------*/
 
@@ -111,7 +112,6 @@ header .spot li a:hover {color: #000; text-decoration-line: underline;}/*underli
 .notice ul{padding: 0 50px; margin: 0 auto;height:280px; width: 1180px;}
 .notice > ul > li{position:relative; display: inline-block; background-color: #fff; height: 280px; width: 280px; margin-right: 20px}
 .notice > ul > li:nth-child(4){margin: 0px;}
-
 
 /*------------------------< btm >--------------------*/
 
