@@ -108,16 +108,36 @@ header .spot li a:hover {color: #000; text-decoration-line: underline;}/*underli
 
 /*------------------------ < notice > --------------------*/
 
-.notice {position: relative; display: block; height: 280px ; background-color:beige; padding: 55px 0;}
-.notice ul{padding: 0 50px; margin: 0 auto;height:280px; width: 1180px;}
-.notice > ul > li{position:relative; display: inline-block; background-color: #fff; height: 280px; width: 280px; margin-right: 20px}
-.notice > ul > li:nth-child(4){margin: 0px;}
+.notice {display: block; height: 280px ; background-color:beige; padding: 55px 0;}
+.notice .layout {position: absolute;display: flex;padding: 0 50px; left: 50%; transform: translateX(-50%);height: 275px; height:280px; width: 1180px;}
+.notice .layout .find-box,
+.notice .layout .notice-box,
+.notice .layout .news-box{display: inline-block; background-color: #fff; height: 280px; width: 280px; margin-right: 20px}
+.notice .layout .search-box {display: inline-block; background-color: #fff; height: 280px; width: 280px;}
+.notice .layout div{display:flex; position: relative;}
 
 /*------------------------< btm >--------------------*/
 
-.btm .footer-top {display: block; height: 70px;background-color: #383f43}
+.btm { color:#fff; display: block;}
+.btm .footer-top {height: 70px; background-color: #383f43;}
+.btm .footer-top .layout {position: relative;display: inline-block;  padding: 0 50px; height: 70px; width: 1180px; left: 50%;  transform: translateX(-50%);}
+.btm .footer-top .layout ul{position: absolute; top:50%; transform: translateY(-50%);}
+.btm .footer-top .layout ul li{display: inline-block; padding-left:20px; }
+
+
+.btm .footer-top .layout .right-area {position: absolute; right: 50px; width: auto;height: 47px; margin-top: 13px; background-color: #2a3033;}
+
+.btm .footer-top .layout .right-area .counseling {position: relative; padding: 0 80px; font-size: 14px;}
+
+.btm .footer-top .layout .right-area .counseling .counseling::after{position: relative; display: inline-block; padding: 0 5px;}
+
+
+.btm .footer-top .right-area .counselin::after {padding: 0 5px;}
+
+
 
 .btm .footer {display: block;padding: 40px auto ; height: 128.667px;background-color: #4c5459}
 
 
 
+/* class 이름 중복 ,  */
